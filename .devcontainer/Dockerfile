@@ -1,5 +1,5 @@
 # Use the lighter Java 17 image to reduce disk usage when building
-FROM mcr.microsoft.com/devcontainers/java:1-21-bullseye
+FROM mcr.microsoft.com/devcontainers/java:1-17-bullseye
 
 # Install Graphviz, curl and Node.js for JHipster
 RUN apt-get update \
