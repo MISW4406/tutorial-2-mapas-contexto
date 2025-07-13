@@ -1,14 +1,14 @@
 ![Context Mapper](https://raw.githubusercontent.com/wiki/ContextMapper/context-mapper-dsl/logo/cm-logo-github-small.png)
 # Context Mapper Demo for Online IDE 
-[![Build](https://github.com/ContextMapper/web-ide-demo/actions/workflows/build.yml/badge.svg)](https://github.com/ContextMapper/web-ide-demo/actions) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ContextMapper/web-ide-demo) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Build](https://github.com/ContextMapper/web-ide-demo/actions/workflows/build.yml/badge.svg)](https://github.com/ContextMapper/web-ide-demo/actions) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&repo=ContextMapper/web-ide-demo) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Welcome to Context Mapper's demo repository. It illustrates how you can configure your own repository for the usage of Context Mapper in the online IDE [Gitpod](https://www.gitpod.io/).
+Welcome to Context Mapper's demo repository. It illustrates how you can configure your own repository for the usage of Context Mapper in the online IDE GitHub Codespaces.
 
 ## Start Using Context Mapper Now
-Start the online IDE and use Context Mapper right now:
+Start the Codespace and use Context Mapper right now:
 
-<a href="https://gitpod.io/#https://github.com/ContextMapper/web-ide-demo" style="padding: 10px;">
-    <img src="https://gitpod.io/button/open-in-gitpod.svg" width="150" alt="Push" align="center">
+<a href="https://github.com/codespaces/new?hide_repo_select=true&repo=ContextMapper/web-ide-demo" style="padding: 10px;">
+    <img src="https://github.com/codespaces/badge.svg" width="150" alt="Push" align="center">
 </a>
 <br/><br/>
 
@@ -17,7 +17,7 @@ In the folder `src/main/cml` you find a small **[CML demo](./src/main/cml/demo.c
 You can find more info's about the tool and a complete documentation on our website [https://contextmapper.org/](https://contextmapper.org/).
 
 ## Create Your Own Context Mapping Repository
-You can simply fork this repository and click the button above to start the online IDE for your repo.
+You can simply fork this repository and click the button above to start the Codespace for your repo.
 
 ## Useful Links
  
