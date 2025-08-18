@@ -1,220 +1,733 @@
-// Core domain estratégico
+// Alpes Partners — Dominios y Subdominios
+
 Domain GestionDeAlianzas {
-    domainVisionStatement = "Centralizar y orquestar el ciclo de vida completo de las asociaciones 
-        estratégicas, desde la creación hasta la monetización, garantizando eficiencia 
-        operativa, cumplimiento normativo y escalabilidad global para soportar el 
-        crecimiento y diferenciación competitiva de Alpes Partners."
+    domainVisionStatement = "Centralizar y orquestar el ciclo de vida completo de las asociaciones
+     estratégicas, desde la creación hasta la monetización, con eficiencia,
+     cumplimiento y escalabilidad global para el crecimiento de Alpes Partners."
 
     // CORE
     Subdomain CicloDeVidaDeAlianzas {
         type = CORE_DOMAIN
-        domainVisionStatement = "Gestiona de manera integral el ciclo de vida de las alianzas estratégicas,
-            desde la identificación de oportunidades hasta la evaluación de resultados."
+        domainVisionStatement = "Gestiona integralmente oportunidades, acuerdos y evaluación de resultados."
     }
 
     Subdomain GestionYAutomatizacionDeContratos {
         type = CORE_DOMAIN
-        domainVisionStatement = "Gestiona y automatiza la creación, seguimiento y cumplimiento de 
-            contratos de alianzas, asegurando transparencia y eficiencia en los acuerdos."
+        domainVisionStatement = "Genera, versiona y hace seguimiento de contratos de alianzas de forma auditable."
     }
 
-    Subdomain AnalisisFinancieroDePortafolio  {
+    Subdomain AnalisisFinancieroDePortafolio {
         type = CORE_DOMAIN
-        domainVisionStatement = "Realiza un análisis financiero exhaustivo del portafolio de alianzas,
-            evaluando su rendimiento y contribución a los objetivos estratégicos de la organización."
+        domainVisionStatement = "Evalúa rendimiento y contribución de alianzas al objetivo estratégico."
     }
 
     // GENERIC
-    Subdomain CumplimientoNormativoYAuditoria  {
+    Subdomain CumplimientoNormativoYAuditoria {
         type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Asegura el cumplimiento de regulaciones locales e internacionales en 
-            contratos, pagos y operaciones; habilita trazabilidad, controles y auditorías 
-            periódicas con evidencia verificable."
+        domainVisionStatement = "Evidencia de cumplimiento en contratos, pagos y operación con trazabilidad."
     }
 
     Subdomain AutomatizacionDePagosGlobales {
         type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Orquesta pagos transfronterizos a socios con cálculo de impuestos y 
-            retenciones, validaciones KYC/AML y conciliación automática para reducir errores 
-            y tiempos de liquidación."
+        domainVisionStatement = "Orquesta pagos transfronterizos con impuestos/retenciones y conciliación."
     }
 }
 
 Domain MarketingDeAfiliados {
-    domainVisionStatement = "Permitir a las marcas escalar sus programas de afiliación con mínima 
-        fricción, optimizando la conversión y maximizando el retorno de inversión 
-        mediante automatización del reclutamiento, seguimiento y pago de afiliados en 
-        tiempo real."
+    domainVisionStatement = "Permitir a las marcas escalar programas de afiliación con mínima fricción,
+     optimizando conversión y ROI mediante reclutamiento, seguimiento y pago confiables."
 
-    Subdomain DescubrimientoYReclutamiento  {
+    Subdomain DescubrimientoYReclutamiento {
         type = CORE_DOMAIN
-        domainVisionStatement = "Identificar y atraer afiliados de alto potencial mediante segmentación, 
-            scoring y campañas de invitación automatizadas que maximicen cobertura y calidad."
+        domainVisionStatement = "Identificar y atraer afiliados con segmentación y scoring."
     }
 
-    Subdomain OnboardingYContratos   {
+    Subdomain OnboardingYContratos {
         type = CORE_DOMAIN
-        domainVisionStatement = "Estandarizar y agilizar el alta de afiliados y la firma de contratos 
-            con flujos autoservicio, verificación de identidad y aprobación ágil."
+        domainVisionStatement = "Alta de afiliados, validación de identidad y firma ágil de acuerdos."
     }
 
     Subdomain ReportesYOptimizacion {
         type = CORE_DOMAIN
-        domainVisionStatement = "Proveer paneles y análisis accionables para optimizar KPIs del programa, 
-            atribución, cohortes y LTV por afiliado, impulsando decisiones basadas en datos."
+        domainVisionStatement = "KPIs accionables, cohortes y LTV para optimizar el programa."
     }
 
-    Subdomain TrackingYConversion  {
+    // Transaccional (apoyado por dominio transversal de Tracking/Atribución)
+    Subdomain OperacionDeCampanas {
         type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Registrar clics, impresiones y conversiones de forma confiable 
-            multi-canal y multi-dispositivo, con prevención de fraude y atribución precisa."
+        domainVisionStatement = "Gestión de ofertas, creativos, caps, ventanas y políticas del programa."
     }
 
     Subdomain PagosAutomaticosYSoporte {
         type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Automatizar pagos recurrentes a afiliados, gestionar facturación, 
-            retenciones e incidencias con autoservicio y SLA definidos."
+        domainVisionStatement = "Pagos recurrentes a afiliados, facturación e incidencias con SLA."
     }
 }
 
 Domain MarketingDeInfluencersYCreadoresDeContenido {
-    domainVisionStatement = "Conectar marcas con creadores e influencers de alto impacto, potenciando
-        colaboraciones auténticas y medibles que generen confianza, engagement y 
-        ventas, todo bajo un flujo de gestión y análisis centralizado."
+    domainVisionStatement = "Conectar marcas con creadores e influencers de alto impacto con gestión integral,
+     medición clara y cumplimiento."
 
     Subdomain DescubrimientoYSeleccion {
         type = CORE_DOMAIN
-        domainVisionStatement = "Encontrar y evaluar creadores alineados a la marca usando criterios de 
-            audiencia, afinidad, rendimiento histórico y brand safety."
+        domainVisionStatement = "Búsqueda y evaluación por audiencia, afinidad y brand safety."
     }
 
     Subdomain GestionDeCampanasYContratos {
         type = CORE_DOMAIN
-        domainVisionStatement = "Planificar campañas, negociar condiciones y gestionar contratos y 
-            entregables en un flujo centralizado y auditable."
+        domainVisionStatement = "Planificación, negociación y seguimiento de entregables y acuerdos."
     }
 
     Subdomain EjecucionYTracking {
         type = CORE_DOMAIN
-        domainVisionStatement = "Coordinar entregables y calendario de publicaciones, monitorear 
-            cumplimiento y tracking de impacto en tiempo real."
+        domainVisionStatement = "Calendario, cumplimiento y telemetría de impacto en tiempo real."
     }
 
     Subdomain ReportingYAprendizajeContinuo {
         type = CORE_DOMAIN
-        domainVisionStatement = "Medir resultados por campaña y creador, generar insights y 
-            retroalimentar la selección y la estrategia para mejora continua."
+        domainVisionStatement = "Medición por campaña/creador e insights para mejora continua."
     }
 
     Subdomain PagosYComplianceAutomatizados {
         type = CORE_DOMAIN
-        domainVisionStatement = "Liquidar honorarios con reglas acordadas, gestionar retenciones/impuestos 
-            y cumplir KYC/AML de forma automatizada y segura."
+        domainVisionStatement = "Liquidación de honorarios con KYC/AML e impuestos."
     }
 
     Subdomain ApoyoProfesionalOpcional {
         type = CORE_DOMAIN
-        domainVisionStatement = "Ofrecer soporte experto bajo demanda (estrategia, creatividades, legal y 
-            optimización) para maximizar el desempeño de las colaboraciones."
-    }
-}
-
-Domain GestionIntegralDePartnerships {
-    domainVisionStatement = "Centraliza relaciones con afiliados, influencers,
-        creadores de contenido, embajadores de marca."
-
-    // CORE
-    Subdomain MarketingAfiliados {
-        type = CORE_DOMAIN
-        domainVisionStatement = "Centralizar las capacidades de programas de afiliación dentro del 
-            portafolio unificado de partnerships, con políticas y métricas comunes."
-    }
-
-    Subdomain MarketingCreadoresDeContenido {
-        type = CORE_DOMAIN
-        domainVisionStatement = "Incorporar la gestión de creadores e influencers bajo flujos homogéneos, 
-            gobernanza compartida y visibilidad transversal."
-    }
-
-    Subdomain ProgramasDeLealtad {
-        type = CORE_DOMAIN
-        domainVisionStatement = "Operar programas de advocacy y referidos integrados, alineados a objetivos 
-            de retención y crecimiento del ecosistema de partnerships."
-    }
-
-
-    // SUPPORT
-    Subdomain GestionDeClientes {
-        type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Mantener una vista 360° de marcas y socios, contactos, permisos, 
-            acuerdos y SLA, habilitando colaboración eficiente."
-    }
-
-    Subdomain Marketplace {
-        type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Habilitar un marketplace donde marcas y socios se descubren, evalúan y 
-            conectan con reglas claras y procesos estandarizados."
-    }
-
-    Subdomain Tracking {
-        type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Proveer servicios transversales de tracking, atribución y anti-fraude 
-            para todos los canales y programas."
-    }
-
-    Subdomain Pagos {
-        type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Ofrecer capacidades comunes de pagos, conciliación y tesorería para 
-            todos los programas y regiones."
-    }
-
-    // GENERIC
-    Subdomain ReportesYAnaliticas {
-        type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Entregar analítica consolidada, modelos de atribución y reportes 
-            ejecutivos multi-programa para la toma de decisiones."
-    }
-
-    Subdomain GestionDeContratos {
-        type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Gestionar plantillas, versiones, aprobaciones y almacenamiento seguro 
-            de contratos con trazabilidad completa."
-    }
-
-    Subdomain Infraestructura { // yml
-        type = GENERIC_SUBDOMAIN
-        domainVisionStatement = "Proveer infraestructura, despliegue, observabilidad, seguridad y 
-            compliance base para todos los contextos."
+        domainVisionStatement = "Servicios gestionados (estrategia/creatividad/legal/optimización)."
     }
 }
 
 Domain ProgramasDeLealtad {
-    domainVisionStatement = "Activa redes de empleados y clientes lieales como embajadores de marca."
+    domainVisionStatement = "Activar redes de clientes y empleados como embajadores con incentivos medibles."
 
     Subdomain ReclutamientoDeDefensores {
         type = CORE_DOMAIN
-        domainVisionStatement = "Identificar y activar clientes promotores y embajadores mediante 
-            segmentación e incentivos adecuados."
+        domainVisionStatement = "Identificación y activación de promotores/embajadores."
     }
+
     Subdomain CreacionDeContenido {
         type = CORE_DOMAIN
-        domainVisionStatement = "Facilitar que defensores creen y compartan contenido de marca con 
-            lineamientos claros y herramientas creativas asistidas."
+        domainVisionStatement = "Herramientas y lineamientos para contenido de marca."
     }
+
     Subdomain TrackingDeReferidos {
         type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Rastrear invitaciones, referidos y conversiones asegurando una 
-            atribución justa y confiable."
+        domainVisionStatement = "Seguimiento de invitaciones, referidos y conversiones."
     }
+
     Subdomain MedicionDeResultados {
         type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Medir el impacto del programa en engagement, ventas incrementales y 
-            recurrencia para optimización continua."
+        domainVisionStatement = "Impacto en engagement, ventas y recurrencia."
     }
+
     Subdomain IncentivosYPagos {
         type = SUPPORTING_DOMAIN
-        domainVisionStatement = "Definir reglas de incentivos, calcular recompensas y ejecutar pagos o 
-            beneficios de forma oportuna y transparente."
+        domainVisionStatement = "Reglas de incentivos, cálculo de recompensas y pagos."
     }
 }
 
+// ------------------ Transversal transaccional ------------------
+Domain TransaccionesYAtribucion {
+    domainVisionStatement = "Capturar eventos (clic/conversión) con fidelidad y aplicar atribución consistente
+     como base de cálculo de comisiones."
+
+    Subdomain Tracking {
+        type = CORE_DOMAIN
+        domainVisionStatement = "SDK/Tag Manager y API S2S; ingesta idempotente de clics/impresiones."
+    }
+
+    Subdomain Atribucion {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Reglas (último clic/prioridades), ventanas y deduplicación por order_id."
+    }
+
+    Subdomain IngestionEIdempotencia {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Claves idempotentes, reintentos/backoff y ordenamiento."
+    }
+
+    Subdomain PrivacidadYConsentimiento {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Consentimiento, cookies, retención y borrado."
+    }
+
+    Subdomain GrafoDeIdentidad {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Vinculación cross-device y resolución de visitantes."
+    }
+}
+
+Domain IngresosYFinanzas {
+    domainVisionStatement = "Transformar conversión en ingresos para partners: comisiones, liquidaciones y pagos
+     multi-moneda con conciliación e impuestos."
+
+    Subdomain MotorDeComisiones {
+        type = CORE_DOMAIN
+        domainVisionStatement = "CPA/CPL/CPC, reglas por producto/canal y ajustes."
+    }
+
+    Subdomain LiquidacionesYPagos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Cierres, mínimos, ciclos y ejecución de pagos."
+    }
+
+    Subdomain Conciliacion {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Conciliación con gateway/ERP y manejo de diferencias."
+    }
+
+    Subdomain ImpuestosYRetenciones {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Aplicación de retenciones y certificados fiscales."
+    }
+
+    Subdomain MultimonedaYFX {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Conversión de divisas y redondeos."
+    }
+
+    Subdomain IntegracionERPContable {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Asientos contables, centros de costo y reporting financiero."
+    }
+
+    Subdomain ChargebacksYAjustes {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Reversos, disputas y notas de crédito/débito."
+    }
+}
+
+Domain GobernanzaYRiesgo {
+    domainVisionStatement = "Proteger clientes y partners con controles de riesgo, cumplimiento y trazabilidad."
+
+    Subdomain KYCyAML {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Verificación de identidad, listas y sanciones."
+    }
+
+    Subdomain DeteccionDeFraude {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Señales en línea/batch, scoring/ML y revisiones."
+    }
+
+    Subdomain AuditoriaYCompliance {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Trails, políticas y evidencias auditables."
+    }
+
+    Subdomain GobiernoDeDatos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Catálogo, linaje, retención y acceso."
+    }
+
+    Subdomain PoliticasDeAcceso {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "SoD, RBAC/ABAC y controles globales."
+    }
+}
+
+Domain ExperienciaYPortales {
+    domainVisionStatement = "Autoservicio y administración segura para marcas y partners."
+
+    Subdomain PortalDeMarcas {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Gestión de campañas, ofertas y reportes."
+    }
+
+    Subdomain PortalDePartners {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Enlaces, rendimiento y pagos."
+    }
+
+    Subdomain ConsolaAdministrativa {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Operaciones internas, soporte y configuración."
+    }
+
+    Subdomain NotificacionesYMensajeria {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Email, push, webhooks y plantillas."
+    }
+
+    Subdomain BaseDeConocimientoYSoporte {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Help center y tickets."
+    }
+}
+
+Domain DatosEInsights {
+    domainVisionStatement = "Convertir eventos en inteligencia operativa y estratégica."
+
+    Subdomain ReportesYTableros {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "KPIs, ROI y estado de pagos/fraude."
+    }
+
+    Subdomain DataWarehouseYLake {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Ingesta/ELT, modelado y gobernanza."
+    }
+
+    Subdomain ExperimentacionYA_B {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Pruebas de reglas/caps/creativos."
+    }
+
+    Subdomain PronosticosYPresupuestos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Predicción de comisiones y cash-flow."
+    }
+
+    Subdomain MLScoring {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Modelos para fraude, propensión y LTV."
+    }
+}
+
+Domain PlataformaEIntegracion {
+    domainVisionStatement = "Plataforma escalable y observable para APIs/SDKs y operación multi-tenant."
+
+    Subdomain APIGatewayYBFF {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "APIs públicas/privadas y BFF por canal."
+    }
+
+    Subdomain SDKsYTagManager {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "SDK web/móvil, tag manager y postbacks."
+    }
+
+    Subdomain BusDeEventosYStreaming {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Kafka/PubSub, contratos, retención y replay."
+    }
+
+    Subdomain ObservabilidadYSRE {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Logs, métricas, tracing, SLOs y fiabilidad."
+    }
+
+    Subdomain IdentidadYAcceso {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "SSO, MFA, RBAC/ABAC."
+    }
+
+    Subdomain MultiTenancyYCuentas {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Gestión de tenants, límites y aislamiento."
+    }
+
+    Subdomain LocalizacionYMoneda {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "I18N/L10N y formatos/monedas."
+    }
+
+    Subdomain GestionDeSecretosYClaves {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "KMS/secretos, rotación y auditoría."
+    }
+}
+
+Domain IntegracionComercialYEcosistema {
+    domainVisionStatement = "Conectar catálogos, órdenes, inventario, envíos y devoluciones."
+
+    Subdomain IngestionDeCatalogoYOfertas {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Productos/SKUs, categorías, precios y promos."
+    }
+
+    Subdomain ConectorDeOrdenesYOMS {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Órdenes/estados, devoluciones/cancelaciones."
+    }
+
+    Subdomain ConectorDeInventarioYPrecios {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Existencias y precios dinámicos."
+    }
+
+    Subdomain ConectorDeEnviosYDevoluciones {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Logística/fulfillment y RMA."
+    }
+}
+
+Domain LegalYContratos {
+    domainVisionStatement = "Contratos, términos y consentimientos que rigen la relación entre marcas, partners y AP."
+
+    Subdomain GestionDeContratos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Plantillas, versiones, aprobaciones y almacenamiento seguro."
+    }
+
+    Subdomain TerminosYCondiciones {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Políticas/ToS por programa y campaña."
+    }
+
+    Subdomain ConsentimientosYDPAs {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Bases legales de tratamiento de datos y DPAs."
+    }
+
+    Subdomain GestionDeDisputas {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Disputas sobre atribución y comisiones."
+    }
+}
+
+Domain GrowthOpsYMarketing {
+    domainVisionStatement = "Acelerar adquisición y retención de marcas/partners con automatización y alineación comercial."
+
+    Subdomain AutomatizacionDeMarketing {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Journeys, nurturing y lead scoring."
+    }
+
+    Subdomain IntegracionCRM {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Sincronización de cuentas y oportunidades."
+    }
+
+    Subdomain EnablementDeVentas {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Materiales, pricing y aprobaciones."
+    }
+
+    Subdomain FormacionYCertificacionDePartners {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Cursos y certificaciones de partners."
+    }
+}
+
+// -------------------- Bounded Contexts --------------------
+
+BoundedContext MonolitoCore {
+  domainVisionStatement = "Módulo central que concentra tracking, atribución, liquidaciones, pagos, reportes y compliance en un único sistema desplegado en bloque."
+  implementationTechnology = "Monolith (.NET/Java + RDBMS)"
+}
+
+BoundedContext PortalesUX {
+  domainVisionStatement = "Interfaz web para marcas y partners. Accede a funciones del monolito para operar campañas, enlaces, reportes y pagos."
+  implementationTechnology = "Web (SPA/SSR)"
+}
+
+BoundedContext TagSDK {
+  domainVisionStatement = "Biblioteca JS/SDK móvil y etiquetas para registro de clics e impresiones."
+  implementationTechnology = "JS/Android/iOS"
+}
+
+BoundedContext OMS {
+  domainVisionStatement = "Sistema de gestión de pedidos de las marcas. Reporta conversiones (ventas/altas)."
+  implementationTechnology = "External System"
+}
+
+BoundedContext PaymentsGateway {
+  domainVisionStatement = "Pasarela de pagos externa para ejecutar transferencias a partners."
+  implementationTechnology = "External System"
+}
+
+BoundedContext ERP {
+  domainVisionStatement = "Sistema contable/financiero del cliente para integración de asientos y conciliación."
+  implementationTechnology = "External System"
+}
+
+BoundedContext CRM {
+  domainVisionStatement = "Gestión comercial y leads; soporte a reclutamiento de partners."
+  implementationTechnology = "External System"
+}
+
+BoundedContext KYC_AML {
+  domainVisionStatement = "Servicios de verificación de identidad, sanciones y listas."
+  implementationTechnology = "External Service"
+}
+
+BoundedContext DataWarehouse {
+  domainVisionStatement = "Almacén analítico que consume dumps/ETL desde el monolito para BI."
+  implementationTechnology = "DWH"
+}
+
+// -------------------- TO-BE Bounded Contexts --------------------
+
+BoundedContext BrandPortal_BFF {
+  domainVisionStatement = "Backend for Frontend del portal de marcas; orquesta casos de uso consumiendo servicios de negocio."
+  implementationTechnology = "BFF (REST/GraphQL)"
+}
+
+BoundedContext PartnerPortal_BFF {
+  domainVisionStatement = "Backend for Frontend del portal de partners; gestiona autoservicio de enlaces, rendimiento y pagos."
+  implementationTechnology = "BFF (REST/GraphQL)"
+}
+
+BoundedContext IdentityAccess {
+  domainVisionStatement = "Gestión de identidad, tokens, SSO/MFA y políticas de acceso."
+  implementationTechnology = "IAM (OIDC/OAuth2)"
+}
+
+BoundedContext RecruitmentMarketplace {
+  domainVisionStatement = "Descubrimiento, scoring y onboarding de partners/afiliados."
+  implementationTechnology = "Microservice"
+}
+
+BoundedContext ContractsTerms {
+  domainVisionStatement = "Términos, contratos, políticas y aceptación."
+  implementationTechnology = "Microservice"
+}
+
+BoundedContext Tracking {
+  domainVisionStatement = "Captura de clics, impresiones y conversiones vía SDK/Tag Manager y API S2S con idempotencia."
+  implementationTechnology = "Microservice + Async Events"
+}
+
+BoundedContext Attribution {
+  domainVisionStatement = "Motor de atribución (último clic/prioridades), ventanas y deduplicación."
+  implementationTechnology = "Microservice + Async Events"
+}
+
+BoundedContext ComplianceFraud {
+  domainVisionStatement = "Controles antifraude/KYC, señales en línea y ajustes/invalidaciones."
+  implementationTechnology = "Microservice + Async Events"
+}
+
+BoundedContext BillingPayouts {
+  domainVisionStatement = "Cálculo de comisiones, liquidaciones, ejecución y conciliación de pagos."
+  implementationTechnology = "Microservice"
+}
+
+BoundedContext ReportingReadModels {
+  domainVisionStatement = "Proyecciones materializadas y APIs de consulta para dashboards y BI operativo."
+  implementationTechnology = "Read Models / Query APIs"
+}
+
+BoundedContext DataWarehouseLake {
+  domainVisionStatement = "Capa analítica corporativa (lake/warehouse) alimentada por eventos y proyecciones."
+  implementationTechnology = "DWH/Lake"
+}
+
+BoundedContext OMSConnector {
+  domainVisionStatement = "Conectores con OMS/Checkout para reportar conversiones y estados."
+  implementationTechnology = "Adapter/Connector"
+}
+
+BoundedContext ERPIntegration {
+  domainVisionStatement = "Integración contable/financiera para conciliaciones y asientos."
+  implementationTechnology = "Adapter/Connector"
+}
+
+BoundedContext CRMIntegration {
+  domainVisionStatement = "Integración con CRM para leads, cuentas y oportunidades."
+  implementationTechnology = "Adapter/Connector"
+}
+
+// -------------------- Context Map: AS-IS --------------------
+
+ContextMap AlpesPartners_AS_IS {
+  type = SYSTEM_LANDSCAPE
+  state = AS_IS
+
+  contains MonolitoCore, PortalesUX, TagSDK, OMS, PaymentsGateway, ERP, CRM, KYC_AML, DataWarehouse
+
+  // Relationships (Upstream = provider; Downstream = consumer)
+  // Monolito expone APIs a Portales y SDK/OMS
+  Relationship Monolith_to_Portals {
+    implementationTechnology = "REST/JSON"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = MonolitoCore { role = OPEN_HOST_SERVICE }
+    downstream = PortalesUX { role = CONFORMIST }
+  }
+
+  Relationship Monolith_to_TagSDK {
+    implementationTechnology = "HTTP pixel/API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = MonolitoCore { role = OPEN_HOST_SERVICE }
+    downstream = TagSDK { role = CONFORMIST }
+  }
+
+  Relationship Monolith_to_OMS {
+    implementationTechnology = "S2S (HTTP)"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = MonolitoCore { role = OPEN_HOST_SERVICE }
+    downstream = OMS { role = CONFORMIST }
+  }
+
+  // Proveedores externos hacia el monolito
+  Relationship Payments_to_Monolith {
+    implementationTechnology = "Batch/API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = PaymentsGateway { role = OPEN_HOST_SERVICE }
+    downstream = MonolitoCore { role = ANTI_CORRUPTION_LAYER }
+  }
+
+  Relationship ERP_to_Monolith {
+    implementationTechnology = "Files/API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ERP { role = OPEN_HOST_SERVICE }
+    downstream = MonolitoCore { role = CONFORMIST }
+  }
+
+  Relationship CRM_to_Monolith {
+    implementationTechnology = "API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = CRM { role = OPEN_HOST_SERVICE }
+    downstream = MonolitoCore { role = CONFORMIST }
+  }
+
+  Relationship KYC_to_Monolith {
+    implementationTechnology = "API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = KYC_AML { role = OPEN_HOST_SERVICE }
+    downstream = MonolitoCore { role = CONFORMIST }
+  }
+
+  Relationship Monolith_to_DWH {
+    implementationTechnology = "ETL/Files"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = MonolitoCore { role = PUBLISHED_LANGUAGE }
+    downstream = DataWarehouse { role = CONFORMIST }
+  }
+}
+
+// -------------------- Context Map: TO-BE --------------------
+
+ContextMap AlpesPartners_TO_BE {
+  type = SYSTEM_LANDSCAPE
+  state = TO_BE
+
+  contains BrandPortal_BFF, PartnerPortal_BFF, IdentityAccess,
+           RecruitmentMarketplace, ContractsTerms, Tracking, Attribution, ComplianceFraud,
+           BillingPayouts, ReportingReadModels, DataWarehouseLake,
+           OMSConnector, PaymentsGateway, ERPIntegration, CRMIntegration
+
+  // IAM para Portales
+  Relationship IAM_to_BrandBFF {
+    implementationTechnology = "OIDC/OAuth2"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = IdentityAccess { role = OPEN_HOST_SERVICE }
+    downstream = BrandPortal_BFF { role = CONFORMIST }
+  }
+
+  Relationship IAM_to_PartnerBFF {
+    implementationTechnology = "OIDC/OAuth2"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = IdentityAccess { role = OPEN_HOST_SERVICE }
+    downstream = PartnerPortal_BFF { role = CONFORMIST }
+  }
+
+  // BFF consume APIs de negocio
+  Relationship Recruitment_to_BrandBFF {
+    implementationTechnology = "REST/gRPC"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = RecruitmentMarketplace { role = OPEN_HOST_SERVICE }
+    downstream = BrandPortal_BFF { role = CONFORMIST }
+  }
+
+  Relationship Contracts_to_BrandBFF {
+    implementationTechnology = "REST"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ContractsTerms { role = OPEN_HOST_SERVICE }
+    downstream = BrandPortal_BFF { role = CONFORMIST }
+  }
+
+  Relationship Recruitment_to_PartnerBFF {
+    implementationTechnology = "REST"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = RecruitmentMarketplace { role = OPEN_HOST_SERVICE }
+    downstream = PartnerPortal_BFF { role = CONFORMIST }
+  }
+
+  Relationship Contracts_to_PartnerBFF {
+    implementationTechnology = "REST"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ContractsTerms { role = OPEN_HOST_SERVICE }
+    downstream = PartnerPortal_BFF { role = CONFORMIST }
+  }
+
+  // Flujo de eventos
+  Relationship Tracking_to_Attribution {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = Tracking { role = PUBLISHED_LANGUAGE }
+    downstream = Attribution { role = CONFORMIST }
+  }
+
+  Relationship Tracking_to_Compliance {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = Tracking { role = PUBLISHED_LANGUAGE }
+    downstream = ComplianceFraud { role = CONFORMIST }
+  }
+
+  Relationship Attribution_to_Billing {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = Attribution { role = PUBLISHED_LANGUAGE }
+    downstream = BillingPayouts { role = CONFORMIST }
+  }
+
+  Relationship Compliance_to_Billing {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ComplianceFraud { role = PUBLISHED_LANGUAGE }
+    downstream = BillingPayouts { role = CONFORMIST }
+  }
+
+  Relationship Tracking_to_Reporting {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = Tracking { role = PUBLISHED_LANGUAGE }
+    downstream = ReportingReadModels { role = CONFORMIST }
+  }
+
+  Relationship Attribution_to_Reporting {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = Attribution { role = PUBLISHED_LANGUAGE }
+    downstream = ReportingReadModels { role = CONFORMIST }
+  }
+
+  Relationship Billing_to_Reporting {
+    implementationTechnology = "Async Events"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = BillingPayouts { role = PUBLISHED_LANGUAGE }
+    downstream = ReportingReadModels { role = CONFORMIST }
+  }
+
+  // Externos
+  Relationship Payments_to_Billing {
+    implementationTechnology = "API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = PaymentsGateway { role = OPEN_HOST_SERVICE }
+    downstream = BillingPayouts { role = ANTI_CORRUPTION_LAYER }
+  }
+
+  Relationship ERP_to_Billing {
+    implementationTechnology = "API/Files"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ERPIntegration { role = OPEN_HOST_SERVICE }
+    downstream = BillingPayouts { role = CONFORMIST }
+  }
+
+  Relationship CRM_to_Recruitment {
+    implementationTechnology = "API"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = CRMIntegration { role = OPEN_HOST_SERVICE }
+    downstream = RecruitmentMarketplace { role = CONFORMIST }
+  }
+
+  Relationship OMS_to_Tracking {
+    implementationTechnology = "S2S (HTTP)"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = OMSConnector { role = OPEN_HOST_SERVICE }
+    downstream = Tracking { role = CONFORMIST }
+  }
+
+  // BI corporativo
+  Relationship Reporting_to_DWH {
+    implementationTechnology = "ELT/Batch"
+    type = UPSTREAM_DOWNSTREAM
+    upstream = ReportingReadModels { role = PUBLISHED_LANGUAGE }
+    downstream = DataWarehouseLake { role = CONFORMIST }
+  }
+}
