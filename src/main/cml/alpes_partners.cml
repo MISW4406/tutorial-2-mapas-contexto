@@ -1,0 +1,220 @@
+// Core domain estratégico
+Domain GestionDeAlianzas {
+    domainVisionStatement = "Centralizar y orquestar el ciclo de vida completo de las asociaciones 
+        estratégicas, desde la creación hasta la monetización, garantizando eficiencia 
+        operativa, cumplimiento normativo y escalabilidad global para soportar el 
+        crecimiento y diferenciación competitiva de Alpes Partners."
+
+    // CORE
+    Subdomain CicloDeVidaDeAlianzas {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Gestiona de manera integral el ciclo de vida de las alianzas estratégicas,
+            desde la identificación de oportunidades hasta la evaluación de resultados."
+    }
+
+    Subdomain GestionYAutomatizacionDeContratos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Gestiona y automatiza la creación, seguimiento y cumplimiento de 
+            contratos de alianzas, asegurando transparencia y eficiencia en los acuerdos."
+    }
+
+    Subdomain AnalisisFinancieroDePortafolio  {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Realiza un análisis financiero exhaustivo del portafolio de alianzas,
+            evaluando su rendimiento y contribución a los objetivos estratégicos de la organización."
+    }
+
+    // GENERIC
+    Subdomain CumplimientoNormativoYAuditoria  {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Asegura el cumplimiento de regulaciones locales e internacionales en 
+            contratos, pagos y operaciones; habilita trazabilidad, controles y auditorías 
+            periódicas con evidencia verificable."
+    }
+
+    Subdomain AutomatizacionDePagosGlobales {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Orquesta pagos transfronterizos a socios con cálculo de impuestos y 
+            retenciones, validaciones KYC/AML y conciliación automática para reducir errores 
+            y tiempos de liquidación."
+    }
+}
+
+Domain MarketingDeAfiliados {
+    domainVisionStatement = "Permitir a las marcas escalar sus programas de afiliación con mínima 
+        fricción, optimizando la conversión y maximizando el retorno de inversión 
+        mediante automatización del reclutamiento, seguimiento y pago de afiliados en 
+        tiempo real."
+
+    Subdomain DescubrimientoYReclutamiento  {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Identificar y atraer afiliados de alto potencial mediante segmentación, 
+            scoring y campañas de invitación automatizadas que maximicen cobertura y calidad."
+    }
+
+    Subdomain OnboardingYContratos   {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Estandarizar y agilizar el alta de afiliados y la firma de contratos 
+            con flujos autoservicio, verificación de identidad y aprobación ágil."
+    }
+
+    Subdomain ReportesYOptimizacion {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Proveer paneles y análisis accionables para optimizar KPIs del programa, 
+            atribución, cohortes y LTV por afiliado, impulsando decisiones basadas en datos."
+    }
+
+    Subdomain TrackingYConversion  {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Registrar clics, impresiones y conversiones de forma confiable 
+            multi-canal y multi-dispositivo, con prevención de fraude y atribución precisa."
+    }
+
+    Subdomain PagosAutomaticosYSoporte {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Automatizar pagos recurrentes a afiliados, gestionar facturación, 
+            retenciones e incidencias con autoservicio y SLA definidos."
+    }
+}
+
+Domain MarketingDeInfluencersYCreadoresDeContenido {
+    domainVisionStatement = "Conectar marcas con creadores e influencers de alto impacto, potenciando
+        colaboraciones auténticas y medibles que generen confianza, engagement y 
+        ventas, todo bajo un flujo de gestión y análisis centralizado."
+
+    Subdomain DescubrimientoYSeleccion {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Encontrar y evaluar creadores alineados a la marca usando criterios de 
+            audiencia, afinidad, rendimiento histórico y brand safety."
+    }
+
+    Subdomain GestionDeCampanasYContratos {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Planificar campañas, negociar condiciones y gestionar contratos y 
+            entregables en un flujo centralizado y auditable."
+    }
+
+    Subdomain EjecucionYTracking {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Coordinar entregables y calendario de publicaciones, monitorear 
+            cumplimiento y tracking de impacto en tiempo real."
+    }
+
+    Subdomain ReportingYAprendizajeContinuo {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Medir resultados por campaña y creador, generar insights y 
+            retroalimentar la selección y la estrategia para mejora continua."
+    }
+
+    Subdomain PagosYComplianceAutomatizados {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Liquidar honorarios con reglas acordadas, gestionar retenciones/impuestos 
+            y cumplir KYC/AML de forma automatizada y segura."
+    }
+
+    Subdomain ApoyoProfesionalOpcional {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Ofrecer soporte experto bajo demanda (estrategia, creatividades, legal y 
+            optimización) para maximizar el desempeño de las colaboraciones."
+    }
+}
+
+Domain GestionIntegralDePartnerships {
+    domainVisionStatement = "Centraliza relaciones con afiliados, influencers,
+        creadores de contenido, embajadores de marca."
+
+    // CORE
+    Subdomain MarketingAfiliados {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Centralizar las capacidades de programas de afiliación dentro del 
+            portafolio unificado de partnerships, con políticas y métricas comunes."
+    }
+
+    Subdomain MarketingCreadoresDeContenido {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Incorporar la gestión de creadores e influencers bajo flujos homogéneos, 
+            gobernanza compartida y visibilidad transversal."
+    }
+
+    Subdomain ProgramasDeLealtad {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Operar programas de advocacy y referidos integrados, alineados a objetivos 
+            de retención y crecimiento del ecosistema de partnerships."
+    }
+
+
+    // SUPPORT
+    Subdomain GestionDeClientes {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Mantener una vista 360° de marcas y socios, contactos, permisos, 
+            acuerdos y SLA, habilitando colaboración eficiente."
+    }
+
+    Subdomain Marketplace {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Habilitar un marketplace donde marcas y socios se descubren, evalúan y 
+            conectan con reglas claras y procesos estandarizados."
+    }
+
+    Subdomain Tracking {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Proveer servicios transversales de tracking, atribución y anti-fraude 
+            para todos los canales y programas."
+    }
+
+    Subdomain Pagos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Ofrecer capacidades comunes de pagos, conciliación y tesorería para 
+            todos los programas y regiones."
+    }
+
+    // GENERIC
+    Subdomain ReportesYAnaliticas {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Entregar analítica consolidada, modelos de atribución y reportes 
+            ejecutivos multi-programa para la toma de decisiones."
+    }
+
+    Subdomain GestionDeContratos {
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Gestionar plantillas, versiones, aprobaciones y almacenamiento seguro 
+            de contratos con trazabilidad completa."
+    }
+
+    Subdomain Infraestructura { // yml
+        type = GENERIC_SUBDOMAIN
+        domainVisionStatement = "Proveer infraestructura, despliegue, observabilidad, seguridad y 
+            compliance base para todos los contextos."
+    }
+}
+
+Domain ProgramasDeLealtad {
+    domainVisionStatement = "Activa redes de empleados y clientes lieales como embajadores de marca."
+
+    Subdomain ReclutamientoDeDefensores {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Identificar y activar clientes promotores y embajadores mediante 
+            segmentación e incentivos adecuados."
+    }
+    Subdomain CreacionDeContenido {
+        type = CORE_DOMAIN
+        domainVisionStatement = "Facilitar que defensores creen y compartan contenido de marca con 
+            lineamientos claros y herramientas creativas asistidas."
+    }
+    Subdomain TrackingDeReferidos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Rastrear invitaciones, referidos y conversiones asegurando una 
+            atribución justa y confiable."
+    }
+    Subdomain MedicionDeResultados {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Medir el impacto del programa en engagement, ventas incrementales y 
+            recurrencia para optimización continua."
+    }
+    Subdomain IncentivosYPagos {
+        type = SUPPORTING_DOMAIN
+        domainVisionStatement = "Definir reglas de incentivos, calcular recompensas y ejecutar pagos o 
+            beneficios de forma oportuna y transparente."
+    }
+}
+
